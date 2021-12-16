@@ -22,7 +22,7 @@ pod 'HTScrollDriver'
 
 ## Author
 
-wangce02, wangce02@zhuanzhuan.com
+wangce520
 
 ## License
 
