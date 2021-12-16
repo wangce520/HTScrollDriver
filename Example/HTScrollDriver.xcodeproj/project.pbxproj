@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* HTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* HTAppDelegate.m */; };
+		6003F5A7195388D20070C39A /* HTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* HTViewController.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
+		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		60EC6AA5B49CBBC13DF72C05 /* Pods_HTScrollDriver_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED906EA8145B56FED6AA60 /* Pods_HTScrollDriver_Example.framework */; };
+		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		D29FDC252750828200B7E92B /* HTTableViewHeaderFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D29FDC242750828200B7E92B /* HTTableViewHeaderFooter.m */; };
+		D2A21C46274FBBAF00E2C030 /* HTDiamondViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C45274FBBAF00E2C030 /* HTDiamondViewCell.m */; };
+		D2A21C79274FBFA000E2C030 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C49274FBF9F00E2C030 /* YYDiskCache.m */; };
+		D2A21C7A274FBFA000E2C030 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C4B274FBF9F00E2C030 /* YYCache.m */; };
+		D2A21C7B274FBFA000E2C030 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C4F274FBF9F00E2C030 /* YYKVStorage.m */; };
+		D2A21C7C274FBFA000E2C030 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C50274FBF9F00E2C030 /* YYMemoryCache.m */; };
+		D2A21C80274FBFA100E2C030 /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C59274FBF9F00E2C030 /* YYSpriteSheetImage.m */; };
+		D2A21C81274FBFA100E2C030 /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C5B274FBF9F00E2C030 /* YYImage.m */; };
+		D2A21C82274FBFA100E2C030 /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C5C274FBF9F00E2C030 /* YYImageCoder.m */; };
+		D2A21C83274FBFA100E2C030 /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C5D274FBF9F00E2C030 /* YYFrameImage.m */; };
+		D2A21C84274FBFA100E2C030 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C5E274FBF9F00E2C030 /* YYAnimatedImageView.m */; };
+		D2A21C88274FBFA100E2C030 /* YYImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C65274FBFA000E2C030 /* YYImageCache.m */; };
+		D2A21C89274FBFA100E2C030 /* YYWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C66274FBFA000E2C030 /* YYWebImageManager.m */; };
+		D2A21C8A274FBFA100E2C030 /* _YYWebImageSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C6B274FBFA000E2C030 /* _YYWebImageSetter.m */; };
+		D2A21C8B274FBFA100E2C030 /* UIButton+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C72274FBFA000E2C030 /* UIButton+YYWebImage.m */; };
+		D2A21C8C274FBFA100E2C030 /* UIImageView+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C73274FBFA000E2C030 /* UIImageView+YYWebImage.m */; };
+		D2A21C8D274FBFA100E2C030 /* MKAnnotationView+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C74274FBFA000E2C030 /* MKAnnotationView+YYWebImage.m */; };
+		D2A21C8E274FBFA100E2C030 /* UIImage+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C75274FBFA000E2C030 /* UIImage+YYWebImage.m */; };
+		D2A21C8F274FBFA100E2C030 /* CALayer+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C76274FBFA000E2C030 /* CALayer+YYWebImage.m */; };
+		D2A21C90274FBFA100E2C030 /* YYWebImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C78274FBFA000E2C030 /* YYWebImageOperation.m */; };
+		D2A21C95274FC3CA00E2C030 /* HTNormalTableSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C94274FC3CA00E2C030 /* HTNormalTableSectionHeader.m */; };
+		D2A21C98274FC86F00E2C030 /* HTNomalGoodListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A21C97274FC86F00E2C030 /* HTNomalGoodListCell.m */; };
+		D2AB891B274F79D700436BFD /* HTNormalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB891A274F79D700436BFD /* HTNormalListViewController.m */; };
+		D2AB8920274F929600436BFD /* HTBannerImgViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB891F274F929600436BFD /* HTBannerImgViewCell.m */; };
+		DF840792A74248B50751E56F /* Pods_HTScrollDriver_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B0E914485B55CFD6D7E90D /* Pods_HTScrollDriver_Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = HTScrollDriver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		475682503535FCC0D7ACEC25 /* Pods-HTScrollDriver_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTScrollDriver_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HTScrollDriver_Tests/Pods-HTScrollDriver_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DD163649B7B7655379F6D74 /* Pods-HTScrollDriver_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTScrollDriver_Example.debug.xcconfig"; path = "Target Support Files/Pods-HTScrollDriver_Example/Pods-HTScrollDriver_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4F1F1FEC4874677FC25C22CD /* Pods-HTScrollDriver_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTScrollDriver_Example.release.xcconfig"; path = "Target Support Files/Pods-HTScrollDriver_Example/Pods-HTScrollDriver_Example.release.xcconfig"; sourceTree = "<group>"; };
+		578532AC8FE51FDEAA193551 /* HTScrollDriver.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HTScrollDriver.podspec; path = ../HTScrollDriver.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5A574FACCB6A2A322098B921 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* HTScrollDriver_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTScrollDriver_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* HTScrollDriver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HTScrollDriver-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* HTScrollDriver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HTScrollDriver-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* HTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* HTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* HTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* HTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTViewController.m; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003F5AE195388D20070C39A /* HTScrollDriver_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTScrollDriver_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9031B863972CA5EAE10FCBED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		90896FED34C570737A07ED37 /* Pods-HTScrollDriver_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTScrollDriver_Tests.release.xcconfig"; path = "Target Support Files/Pods-HTScrollDriver_Tests/Pods-HTScrollDriver_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		93B0E914485B55CFD6D7E90D /* Pods_HTScrollDriver_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTScrollDriver_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFED906EA8145B56FED6AA60 /* Pods_HTScrollDriver_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTScrollDriver_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29FDC232750828200B7E92B /* HTTableViewHeaderFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTableViewHeaderFooter.h; sourceTree = "<group>"; };
+		D29FDC242750828200B7E92B /* HTTableViewHeaderFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTableViewHeaderFooter.m; sourceTree = "<group>"; };
+		D2A21C44274FBBAF00E2C030 /* HTDiamondViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTDiamondViewCell.h; sourceTree = "<group>"; };
+		D2A21C45274FBBAF00E2C030 /* HTDiamondViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTDiamondViewCell.m; sourceTree = "<group>"; };
+		D2A21C49274FBF9F00E2C030 /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		D2A21C4A274FBF9F00E2C030 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		D2A21C4B274FBF9F00E2C030 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
+		D2A21C4C274FBF9F00E2C030 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		D2A21C4D274FBF9F00E2C030 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		D2A21C4E274FBF9F00E2C030 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		D2A21C4F274FBF9F00E2C030 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
+		D2A21C50274FBF9F00E2C030 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
+		D2A21C56274FBF9F00E2C030 /* YYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImage.h; sourceTree = "<group>"; };
+		D2A21C57274FBF9F00E2C030 /* YYImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageCoder.h; sourceTree = "<group>"; };
+		D2A21C58274FBF9F00E2C030 /* YYFrameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFrameImage.h; sourceTree = "<group>"; };
+		D2A21C59274FBF9F00E2C030 /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSpriteSheetImage.m; sourceTree = "<group>"; };
+		D2A21C5A274FBF9F00E2C030 /* YYAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYAnimatedImageView.h; sourceTree = "<group>"; };
+		D2A21C5B274FBF9F00E2C030 /* YYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImage.m; sourceTree = "<group>"; };
+		D2A21C5C274FBF9F00E2C030 /* YYImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageCoder.m; sourceTree = "<group>"; };
+		D2A21C5D274FBF9F00E2C030 /* YYFrameImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFrameImage.m; sourceTree = "<group>"; };
+		D2A21C5E274FBF9F00E2C030 /* YYAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYAnimatedImageView.m; sourceTree = "<group>"; };
+		D2A21C5F274FBF9F00E2C030 /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSpriteSheetImage.h; sourceTree = "<group>"; };
+		D2A21C65274FBFA000E2C030 /* YYImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageCache.m; sourceTree = "<group>"; };
+		D2A21C66274FBFA000E2C030 /* YYWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWebImageManager.m; sourceTree = "<group>"; };
+		D2A21C67274FBFA000E2C030 /* YYWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWebImageOperation.h; sourceTree = "<group>"; };
+		D2A21C68274FBFA000E2C030 /* YYImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageCache.h; sourceTree = "<group>"; };
+		D2A21C69274FBFA000E2C030 /* YYWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWebImageManager.h; sourceTree = "<group>"; };
+		D2A21C6B274FBFA000E2C030 /* _YYWebImageSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _YYWebImageSetter.m; sourceTree = "<group>"; };
+		D2A21C6C274FBFA000E2C030 /* UIButton+YYWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YYWebImage.h"; sourceTree = "<group>"; };
+		D2A21C6D274FBFA000E2C030 /* UIImageView+YYWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+YYWebImage.h"; sourceTree = "<group>"; };
+		D2A21C6E274FBFA000E2C030 /* CALayer+YYWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+YYWebImage.h"; sourceTree = "<group>"; };
+		D2A21C6F274FBFA000E2C030 /* UIImage+YYWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YYWebImage.h"; sourceTree = "<group>"; };
+		D2A21C70274FBFA000E2C030 /* MKAnnotationView+YYWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+YYWebImage.h"; sourceTree = "<group>"; };
+		D2A21C71274FBFA000E2C030 /* _YYWebImageSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _YYWebImageSetter.h; sourceTree = "<group>"; };
+		D2A21C72274FBFA000E2C030 /* UIButton+YYWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YYWebImage.m"; sourceTree = "<group>"; };
+		D2A21C73274FBFA000E2C030 /* UIImageView+YYWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+YYWebImage.m"; sourceTree = "<group>"; };
+		D2A21C74274FBFA000E2C030 /* MKAnnotationView+YYWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+YYWebImage.m"; sourceTree = "<group>"; };
+		D2A21C75274FBFA000E2C030 /* UIImage+YYWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YYWebImage.m"; sourceTree = "<group>"; };
+		D2A21C76274FBFA000E2C030 /* CALayer+YYWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+YYWebImage.m"; sourceTree = "<group>"; };
+		D2A21C77274FBFA000E2C030 /* YYWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWebImage.h; sourceTree = "<group>"; };
+		D2A21C78274FBFA000E2C030 /* YYWebImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWebImageOperation.m; sourceTree = "<group>"; };
+		D2A21C93274FC3CA00E2C030 /* HTNormalTableSectionHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTNormalTableSectionHeader.h; sourceTree = "<group>"; };
+		D2A21C94274FC3CA00E2C030 /* HTNormalTableSectionHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTNormalTableSectionHeader.m; sourceTree = "<group>"; };
+		D2A21C96274FC86F00E2C030 /* HTNomalGoodListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTNomalGoodListCell.h; sourceTree = "<group>"; };
+		D2A21C97274FC86F00E2C030 /* HTNomalGoodListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTNomalGoodListCell.m; sourceTree = "<group>"; };
+		D2AB8919274F79D700436BFD /* HTNormalListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTNormalListViewController.h; sourceTree = "<group>"; };
+		D2AB891A274F79D700436BFD /* HTNormalListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTNormalListViewController.m; sourceTree = "<group>"; };
+		D2AB891C274F7A4600436BFD /* HTPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTPrefixHeader.pch; sourceTree = "<group>"; };
+		D2AB891E274F929600436BFD /* HTBannerImgViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTBannerImgViewCell.h; sourceTree = "<group>"; };
+		D2AB891F274F929600436BFD /* HTBannerImgViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTBannerImgViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				60EC6AA5B49CBBC13DF72C05 /* Pods_HTScrollDriver_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AB195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
+				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+				DF840792A74248B50751E56F /* Pods_HTScrollDriver_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example for HTScrollDriver */,
+				6003F5B5195388D20070C39A /* Tests */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				8F3C73F72D1D958B28BF0DC8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* HTScrollDriver_Example.app */,
+				6003F5AE195388D20070C39A /* HTScrollDriver_Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				AFED906EA8145B56FED6AA60 /* Pods_HTScrollDriver_Example.framework */,
+				93B0E914485B55CFD6D7E90D /* Pods_HTScrollDriver_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example for HTScrollDriver */ = {
+			isa = PBXGroup;
+			children = (
+				D2A21C91274FBFBF00E2C030 /* Third */,
+				6003F59C195388D20070C39A /* HTAppDelegate.h */,
+				6003F59D195388D20070C39A /* HTAppDelegate.m */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				D2AB891C274F7A4600436BFD /* HTPrefixHeader.pch */,
+				6003F5A5195388D20070C39A /* HTViewController.h */,
+				6003F5A6195388D20070C39A /* HTViewController.m */,
+				D2AB8917274F79B000436BFD /* NormalList */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+			);
+			name = "Example for HTScrollDriver";
+			path = HTScrollDriver;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* HTScrollDriver-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* HTScrollDriver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6003F5B5195388D20070C39A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6003F5B6195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B8195388D20070C39A /* InfoPlist.strings */,
+				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				578532AC8FE51FDEAA193551 /* HTScrollDriver.podspec */,
+				9031B863972CA5EAE10FCBED /* README.md */,
+				5A574FACCB6A2A322098B921 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		8F3C73F72D1D958B28BF0DC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DD163649B7B7655379F6D74 /* Pods-HTScrollDriver_Example.debug.xcconfig */,
+				4F1F1FEC4874677FC25C22CD /* Pods-HTScrollDriver_Example.release.xcconfig */,
+				475682503535FCC0D7ACEC25 /* Pods-HTScrollDriver_Tests.debug.xcconfig */,
+				90896FED34C570737A07ED37 /* Pods-HTScrollDriver_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2A21C47274FBF9F00E2C030 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				D2A21C48274FBF9F00E2C030 /* YYCache */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
+		D2A21C48274FBF9F00E2C030 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				D2A21C49274FBF9F00E2C030 /* YYDiskCache.m */,
+				D2A21C4A274FBF9F00E2C030 /* YYKVStorage.h */,
+				D2A21C4B274FBF9F00E2C030 /* YYCache.m */,
+				D2A21C4C274FBF9F00E2C030 /* YYMemoryCache.h */,
+				D2A21C4D274FBF9F00E2C030 /* YYDiskCache.h */,
+				D2A21C4E274FBF9F00E2C030 /* YYCache.h */,
+				D2A21C4F274FBF9F00E2C030 /* YYKVStorage.m */,
+				D2A21C50274FBF9F00E2C030 /* YYMemoryCache.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
+		D2A21C53274FBF9F00E2C030 /* YYImage */ = {
+			isa = PBXGroup;
+			children = (
+				D2A21C55274FBF9F00E2C030 /* YYImage */,
+			);
+			path = YYImage;
+			sourceTree = "<group>";
+		};
+		D2A21C55274FBF9F00E2C030 /* YYImage */ = {
+			isa = PBXGroup;
+			children = (
+				D2A21C56274FBF9F00E2C030 /* YYImage.h */,
+				D2A21C57274FBF9F00E2C030 /* YYImageCoder.h */,
+				D2A21C58274FBF9F00E2C030 /* YYFrameImage.h */,
+				D2A21C59274FBF9F00E2C030 /* YYSpriteSheetImage.m */,
+				D2A21C5A274FBF9F00E2C030 /* YYAnimatedImageView.h */,
+				D2A21C5B274FBF9F00E2C030 /* YYImage.m */,
+				D2A21C5C274FBF9F00E2C030 /* YYImageCoder.m */,
+				D2A21C5D274FBF9F00E2C030 /* YYFrameImage.m */,
+				D2A21C5E274FBF9F00E2C030 /* YYAnimatedImageView.m */,
+				D2A21C5F274FBF9F00E2C030 /* YYSpriteSheetImage.h */,
+			);
+			path = YYImage;
+			sourceTree = "<group>";
+		};
+		D2A21C61274FBFA000E2C030 /* YYWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				D2A21C64274FBFA000E2C030 /* YYWebImage */,
+			);
+			path = YYWebImage;
+			sourceTree = "<group>";
+		};
+		D2A21C64274FBFA000E2C030 /* YYWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				D2A21C65274FBFA000E2C030 /* YYImageCache.m */,
+				D2A21C66274FBFA000E2C030 /* YYWebImageManager.m */,
+				D2A21C67274FBFA000E2C030 /* YYWebImageOperation.h */,
+				D2A21C68274FBFA000E2C030 /* YYImageCache.h */,
+				D2A21C69274FBFA000E2C030 /* YYWebImageManager.h */,
+				D2A21C6A274FBFA000E2C030 /* Categories */,
+				D2A21C77274FBFA000E2C030 /* YYWebImage.h */,
+				D2A21C78274FBFA000E2C030 /* YYWebImageOperation.m */,
+			);
+			path = YYWebImage;
+			sourceTree = "<group>";
+		};
+		D2A21C6A274FBFA000E2C030 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D2A21C6B274FBFA000E2C030 /* _YYWebImageSetter.m */,
+				D2A21C6C274FBFA000E2C030 /* UIButton+YYWebImage.h */,
+				D2A21C6D274FBFA000E2C030 /* UIImageView+YYWebImage.h */,
+				D2A21C6E274FBFA000E2C030 /* CALayer+YYWebImage.h */,
+				D2A21C6F274FBFA000E2C030 /* UIImage+YYWebImage.h */,
+				D2A21C70274FBFA000E2C030 /* MKAnnotationView+YYWebImage.h */,
+				D2A21C71274FBFA000E2C030 /* _YYWebImageSetter.h */,
+				D2A21C72274FBFA000E2C030 /* UIButton+YYWebImage.m */,
+				D2A21C73274FBFA000E2C030 /* UIImageView+YYWebImage.m */,
+				D2A21C74274FBFA000E2C030 /* MKAnnotationView+YYWebImage.m */,
+				D2A21C75274FBFA000E2C030 /* UIImage+YYWebImage.m */,
+				D2A21C76274FBFA000E2C030 /* CALayer+YYWebImage.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D2A21C91274FBFBF00E2C030 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				D2A21C47274FBF9F00E2C030 /* YYCache */,
+				D2A21C53274FBF9F00E2C030 /* YYImage */,
+				D2A21C61274FBFA000E2C030 /* YYWebImage */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		D2A21C92274FC3A000E2C030 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				D2A21C93274FC3CA00E2C030 /* HTNormalTableSectionHeader.h */,
+				D2A21C94274FC3CA00E2C030 /* HTNormalTableSectionHeader.m */,
+				D29FDC232750828200B7E92B /* HTTableViewHeaderFooter.h */,
+				D29FDC242750828200B7E92B /* HTTableViewHeaderFooter.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		D2AB8917274F79B000436BFD /* NormalList */ = {
+			isa = PBXGroup;
+			children = (
+				D2AB891D274F927E00436BFD /* Cell */,
+				D2A21C92274FC3A000E2C030 /* Header */,
+				D2AB8918274F79BD00436BFD /* Controller */,
+			);
+			path = NormalList;
+			sourceTree = "<group>";
+		};
+		D2AB8918274F79BD00436BFD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2AB8919274F79D700436BFD /* HTNormalListViewController.h */,
+				D2AB891A274F79D700436BFD /* HTNormalListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2AB891D274F927E00436BFD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D2AB891E274F929600436BFD /* HTBannerImgViewCell.h */,
+				D2AB891F274F929600436BFD /* HTBannerImgViewCell.m */,
+				D2A21C44274FBBAF00E2C030 /* HTDiamondViewCell.h */,
+				D2A21C45274FBBAF00E2C030 /* HTDiamondViewCell.m */,
+				D2A21C96274FC86F00E2C030 /* HTNomalGoodListCell.h */,
+				D2A21C97274FC86F00E2C030 /* HTNomalGoodListCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* HTScrollDriver_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "HTScrollDriver_Example" */;
+			buildPhases = (
+				E1E751D61D4ACBB0A0A2542C /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				C361E6BB601B585EA3630F08 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTScrollDriver_Example;
+			productName = HTScrollDriver;
+			productReference = 6003F58A195388D20070C39A /* HTScrollDriver_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6003F5AD195388D20070C39A /* HTScrollDriver_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "HTScrollDriver_Tests" */;
+			buildPhases = (
+				1DBDFC99A844108E1B828270 /* [CP] Check Pods Manifest.lock */,
+				6003F5AA195388D20070C39A /* Sources */,
+				6003F5AB195388D20070C39A /* Frameworks */,
+				6003F5AC195388D20070C39A /* Resources */,
+				EFC6B449DB747E68C6C76DA3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6003F5B4195388D20070C39A /* PBXTargetDependency */,
+			);
+			name = HTScrollDriver_Tests;
+			productName = HTScrollDriverTests;
+			productReference = 6003F5AE195388D20070C39A /* HTScrollDriver_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HT;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wangce02;
+				TargetAttributes = {
+					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "HTScrollDriver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* HTScrollDriver_Example */,
+				6003F5AD195388D20070C39A /* HTScrollDriver_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AC195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DBDFC99A844108E1B828270 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HTScrollDriver_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C361E6BB601B585EA3630F08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HTScrollDriver_Example/Pods-HTScrollDriver_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HTScrollDriver/HTScrollDriver.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTScrollDriver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HTScrollDriver_Example/Pods-HTScrollDriver_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1E751D61D4ACBB0A0A2542C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HTScrollDriver_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFC6B449DB747E68C6C76DA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HTScrollDriver_Tests/Pods-HTScrollDriver_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HTScrollDriver_Tests/Pods-HTScrollDriver_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F59E195388D20070C39A /* HTAppDelegate.m in Sources */,
+				D2A21C8A274FBFA100E2C030 /* _YYWebImageSetter.m in Sources */,
+				D2A21C84274FBFA100E2C030 /* YYAnimatedImageView.m in Sources */,
+				6003F5A7195388D20070C39A /* HTViewController.m in Sources */,
+				D2A21C80274FBFA100E2C030 /* YYSpriteSheetImage.m in Sources */,
+				D2A21C90274FBFA100E2C030 /* YYWebImageOperation.m in Sources */,
+				D2A21C95274FC3CA00E2C030 /* HTNormalTableSectionHeader.m in Sources */,
+				D2A21C89274FBFA100E2C030 /* YYWebImageManager.m in Sources */,
+				D2A21C83274FBFA100E2C030 /* YYFrameImage.m in Sources */,
+				D2A21C98274FC86F00E2C030 /* HTNomalGoodListCell.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+				D2A21C8F274FBFA100E2C030 /* CALayer+YYWebImage.m in Sources */,
+				D29FDC252750828200B7E92B /* HTTableViewHeaderFooter.m in Sources */,
+				D2A21C7C274FBFA000E2C030 /* YYMemoryCache.m in Sources */,
+				D2A21C79274FBFA000E2C030 /* YYDiskCache.m in Sources */,
+				D2A21C88274FBFA100E2C030 /* YYImageCache.m in Sources */,
+				D2AB891B274F79D700436BFD /* HTNormalListViewController.m in Sources */,
+				D2A21C8D274FBFA100E2C030 /* MKAnnotationView+YYWebImage.m in Sources */,
+				D2A21C7A274FBFA000E2C030 /* YYCache.m in Sources */,
+				D2A21C81274FBFA100E2C030 /* YYImage.m in Sources */,
+				D2A21C8E274FBFA100E2C030 /* UIImage+YYWebImage.m in Sources */,
+				D2A21C8B274FBFA100E2C030 /* UIButton+YYWebImage.m in Sources */,
+				D2A21C7B274FBFA000E2C030 /* YYKVStorage.m in Sources */,
+				D2AB8920274F929600436BFD /* HTBannerImgViewCell.m in Sources */,
+				D2A21C46274FBBAF00E2C030 /* HTDiamondViewCell.m in Sources */,
+				D2A21C8C274FBFA100E2C030 /* UIImageView+YYWebImage.m in Sources */,
+				D2A21C82274FBFA100E2C030 /* YYImageCoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AA195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* HTScrollDriver_Example */;
+			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5B9195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71719F9E1E33DC2100824A3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD163649B7B7655379F6D74 /* Pods-HTScrollDriver_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HTScrollDriver/HTPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
+				);
+				INFOPLIST_FILE = "HTScrollDriver/HTScrollDriver-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F1F1FEC4874677FC25C22CD /* Pods-HTScrollDriver_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HTScrollDriver/HTPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
+				);
+				INFOPLIST_FILE = "HTScrollDriver/HTScrollDriver-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6003F5C3195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475682503535FCC0D7ACEC25 /* Pods-HTScrollDriver_Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTScrollDriver_Example.app/HTScrollDriver_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6003F5C4195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90896FED34C570737A07ED37 /* Pods-HTScrollDriver_Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTScrollDriver_Example.app/HTScrollDriver_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "HTScrollDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "HTScrollDriver_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "HTScrollDriver_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C3195388D20070C39A /* Debug */,
+				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}

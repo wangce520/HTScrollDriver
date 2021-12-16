@@ -1,0 +1,6 @@
+framework module HTScrollDriver {
+  umbrella header "HTScrollDriver-umbrella.h"
+
+  export *
+  module * { export * }
+}

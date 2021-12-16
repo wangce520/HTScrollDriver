@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'HTScrollDriver_Example' do
+  pod 'HTScrollDriver', :path => '../'
+
+  target 'HTScrollDriver_Tests' do
+    inherit! :search_paths
+  pod 'Masonry'
+
+    
+  end
+end

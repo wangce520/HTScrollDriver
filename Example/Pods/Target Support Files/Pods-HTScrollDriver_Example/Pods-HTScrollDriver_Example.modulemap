@@ -1,0 +1,6 @@
+framework module Pods_HTScrollDriver_Example {
+  umbrella header "Pods-HTScrollDriver_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,24 @@
+PODS:
+  - HTScrollDriver (0.1.0):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - HTScrollDriver (from `../`)
+  - Masonry
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  HTScrollDriver:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HTScrollDriver: 62366b096adf7f721b7aaed1259671ea832477f1
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 8a07b06795f6d7fe923a9ad0aa153dcf1f6eba06
+
+COCOAPODS: 1.10.1
