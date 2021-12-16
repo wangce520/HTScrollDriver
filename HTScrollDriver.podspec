@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/wangce02/HTScrollDriver'
+  s.homepage         = 'git@github.com:wangce520/HTScrollDriver.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'wangce02' => 'wangce02@zhuanzhuan.com' }
-  s.source           = { :git => 'https://github.com/wangce02/HTScrollDriver.git', :tag => s.version.to_s }
+  s.author           = { 'wangce520' => '624500136@qq.com' }
+  s.source           = { :git => 'git@github.com:wangce520/HTScrollDriver.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
